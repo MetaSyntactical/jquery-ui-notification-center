@@ -1,0 +1,7 @@
+.notification-center-toggle {
+    clear: both;
+}
+.notification-center-toggle img {
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,141 @@
+.jnotificationcenter-container {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 22%;
+    height: 100%;
+    z-index: 999999;
+    background-image: url(../img/skin-default/notificationcenter_background.png);
+}
+
+.jnotificationcenter-modal {
+    display: none;
+    z-index: 999998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 1280px) {
+    .jnotificationcenter-container {
+        width: 280px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .jnotificationcenter-container {
+        width: 220px;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    .jnotificationcenter-container {
+        background-image: url(../img/skin-default/notificationcenter_background@2X.png);
+        background-size: 256px 256px;
+    }
+}
+
+.jnotificationcenter-container.position-right {
+    right: 0;
+    border-left: 1px solid #ffffff;
+    -moz-box-shadow:    inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    box-shadow:         inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+.jnotificationcenter-container.position-left {
+    left: 0;
+    border-right: 1px solid #ffffff;
+    -moz-box-shadow:    inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    box-shadow:         inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+.jnotificationcenter-container .jnotificationcenter-container-group {
+    font: bold 12px Myriad, Helvetica, Arial, sans-serif;
+    color: rgba(243, 243, 243, 1.0);
+    -moz-text-shadow:    1px 2px 1px rgba(0, 0, 0, 0.8);
+    -webkit-text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+    text-shadow:         1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+.jnotificationcenter-container .jnotificationcenter-container-group:first-of-type {
+    padding-top: 10px;
+}
+
+.jnotificationcenter-action-settings {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: inline-block;
+    width: 24px;
+    height: 19px;
+    background-image: url(../img/skin-default/notificationcenter_icon_settings.png);
+    cursor: pointer;
+}
+
+.jnotificationcenter-notification {
+    display: none;
+    height: 75px;
+    width: 310px;
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
+
+    color: #4d4d4d;
+    font-family: Helvetica, Arial, sans-serif;
+
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(235,235,235,0.9));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.9)), to(rgba(235,235,235,0.9)));
+    -moz-box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+}
+.jnotificationcenter-notification img {
+    float: left;
+    padding: 10px 0 0 15px;
+    width: 60px;
+}
+.jnotificationcenter-notification .jnotificationcenter-message {
+    padding: 0 0 0 15px;
+}
+.jnotificationcenter-notification .jnotificationcenter-message h2 {
+    padding: 15px 0 0 0;
+    margin: 0;
+    font: bold 18px Myriad, Helvetica, Arial, sans-serif;
+    text-shadow: 0 2px 1px #ffffff;
+}
+.jnotificationcenter-notification .jnotificationcenter-message p {
+    margin: 0;
+    font: bold 13px Myriad, Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 1px #ffffff;
+}
+.jnotificationcenter-notification .jnotificationcenter-buttons {
+
+}
+
+.jnotificationcenter-notificationcontainer {
+    position: absolute;
+}
+.jnotificationcenter-notificationcontainer.position-top-left {
+    top: 10px;
+    left: 10px;
+}
+.jnotificationcenter-notificationcontainer.position-top-left .jnotificationcenter-notification,
+.jnotificationcenter-notificationcontainer.position-top-right .jnotificationcenter-notification {
+    margin-bottom: 10px;
+}
+.jnotificationcenter-notificationcontainer.position-top-right {
+    top: 10px;
+    right: 10px;
+}
+.jnotificationcenter-notificationcontainer.position-bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+.jnotificationcenter-notificationcontainer.position-bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
