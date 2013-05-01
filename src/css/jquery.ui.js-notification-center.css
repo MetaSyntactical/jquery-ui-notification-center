@@ -41,21 +41,22 @@
 .jnotificationcenter-container.position-right {
     right: 0;
     border-left: 1px solid #ffffff;
-    -moz-box-shadow:    inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
-    box-shadow:         inset 5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow:    inset 5px 0 20px 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 5px 0 20px 0 rgba(0, 0, 0, 0.8);
+    box-shadow:         inset 5px 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 .jnotificationcenter-container.position-left {
     left: 0;
     border-right: 1px solid #ffffff;
-    -moz-box-shadow:    inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
-    box-shadow:         inset -5px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow:    inset -5px 0 20px 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset -5px 0 20px 0 rgba(0, 0, 0, 0.8);
+    box-shadow:         inset -5px 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 .jnotificationcenter-container .jnotificationcenter-container-group {
     font: bold 12px Myriad, Helvetica, Arial, sans-serif;
+    color: rgb(243, 243, 243);
     color: rgba(243, 243, 243, 1.0);
     -moz-text-shadow:    1px 2px 1px rgba(0, 0, 0, 0.8);
     -webkit-text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
@@ -87,8 +88,12 @@
     color: #4d4d4d;
     font-family: Helvetica, Arial, sans-serif;
 
+    background: #ffffff;
+    background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(235,235,235,0.9));
     background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(235,235,235,0.9));
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.9)), to(rgba(235,235,235,0.9)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(235,235,235,0.9));
+    background: linear-gradient(top, rgba(255,255,255,0.9), rgba(235,235,235,0.9));
     -moz-box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
     -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
     box-shadow: 1px 2px 6px rgba(0,0,0,0.5);
@@ -101,7 +106,7 @@
 .jnotificationcenter-notification .jnotificationcenter-message {
     padding: 0 0 0 15px;
 }
-.jnotificationcenter-notification .jnotificationcenter-message h2 {
+.jnotificationcenter-notification .jnotificationcenter-message p.message-heading {
     padding: 15px 0 0 0;
     margin: 0;
     font: bold 18px Myriad, Helvetica, Arial, sans-serif;
@@ -112,12 +117,14 @@
     font: bold 13px Myriad, Helvetica, Arial, sans-serif;
     text-shadow: 0 1px 1px #ffffff;
 }
-.jnotificationcenter-notification .jnotificationcenter-buttons {
+/*.jnotificationcenter-notification .jnotificationcenter-buttons {
 
-}
+}*/
 
 .jnotificationcenter-notificationcontainer {
     position: absolute;
+    width: 320px;
+    z-index: 99999;
 }
 .jnotificationcenter-notificationcontainer.position-top-left {
     top: 10px;

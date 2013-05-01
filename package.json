@@ -1,0 +1,23 @@
+{
+    "author": "Daniel Kreuer <dk@metasyntactical.com>",
+    "name": "jquery-ui-notification-center",
+    "description": "Notification Center for browser based applications alike Mac OSX Notification Center",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/MetaSyntactical/jquery-ui-notification-center.git"
+    },
+    "engines": {
+        "node": "~0.6.10"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "grunt-contrib-jshint": "~0.4.1",
+        "grunt-contrib-qunit": "~0.2.0",
+        "grunt-contrib-csslint": "~0.1.1",
+        "grunt-html": "~0.3.3",
+        "grunt-cli": "~0.1.7"
+    },
+    "optionalDependencies": {}
+}
